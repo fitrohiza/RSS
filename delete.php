@@ -7,7 +7,7 @@
     $id = $_GET['id'];
 
     // sql to delete a record 
-    $sql = "DELETE FROM transaksi WHERE id='Sid'";
+    $sql = "DELETE FROM transaksi WHERE id='$id'";
     
     if (mysqli_query($conn, $sql)) {
         echo "Data Berhasil Dihapus";

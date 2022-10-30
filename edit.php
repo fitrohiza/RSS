@@ -1,8 +1,8 @@
 <?php
-//include verifikasi.php pada file Administrasi
-include("../verifikasi.php"); ?>
+// //include verifikasi.php pada file Administrasi
+// include("../verifikasi.php"); ?>
 <?php
-require "../koneksi.php";
+require "koneksi.php";
 $id = $_GET['id'];
 $query = mysqli_query($conn, "select * from transaksi where id='$id'");
 while ($data = mysqli_fetch_array($query)) {
@@ -17,7 +17,6 @@ while ($data = mysqli_fetch_array($query)) {
 
     <body>
         <div>
-            <tr>Welcome<b><?php echo $_SESSION['username']; ?>!</b></tr>
             <tr>
                 <div style="text-align: right">
                     <a href="../logout.php">Logout</a>
@@ -66,7 +65,7 @@ while ($data = mysqli_fetch_array($query)) {
                     <tr>
                         <td bgcolor="#ffc0cb">Status</td>
                         <td bgcolor="#ffc0cb">&nbsp;
-                            <input name="status" type="text" value="<?php echo $data['status']; ?>" />
+                            <input name="status" type="text" value="<?php echo $data['statusPel']; ?>" />
                         </td>
                     </tr>
                     <tr>
