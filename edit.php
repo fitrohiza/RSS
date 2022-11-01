@@ -1,8 +1,9 @@
 <?php
 // //include verifikasi.php pada file Administrasi
-// include("../verifikasi.php"); ?>
+// include("../verifikasi.php"); 
+?>
 <?php
-require "koneksi.php";
+require "../koneksi.php";
 $id = $_GET['id'];
 $query = mysqli_query($conn, "select * from transaksi where id='$id'");
 while ($data = mysqli_fetch_array($query)) {

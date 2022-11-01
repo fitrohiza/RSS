@@ -1,9 +1,10 @@
 <?php
 //include verifikasi.php pada file Administrasi
-// include("../verifikasi.php"); ?>
+// include("../verifikasi.php"); 
+?>
 <?php
 // koneksi database 
-require "koneksi.php";
+require "../koneksi.php";
 // menangkap data yang di kirim dari form 
 $id = $_GET['id'];
 $nama_barang = $_GET['nama_barang'];

@@ -10,7 +10,7 @@
 
 <body>
     <?php
-    require "koneksi.php";
+    require "../koneksi.php";
 
     $nama_barang = $_POST['nama_barang'];
     $harga = $_POST['harga'];
@@ -104,7 +104,7 @@
                 </td>
             </tr>
         </table>
-        <a href="input.php"> &lt;&lt; Back</a>
+        <a href="./"> &lt;&lt; Back</a>
     </div>
 </body>
 

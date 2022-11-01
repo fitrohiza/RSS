@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <?php require "koneksi.php";
+    <?php require "../koneksi.php";
     $query = mysqli_query($conn, "SELECT * FROM transaksi ORDER BY id DESC");
     // echo $query;
     ?>
@@ -56,7 +56,7 @@
     </div>
     <br>
     <div align="center">
-        <a href="input.php"> &lt;&lt; Kembali Ke Form Utama</a>
+        <a href="./"> &lt;&lt; Kembali Ke Form Utama</a>
     </div>
 </body>
 
